@@ -39,13 +39,21 @@ Partial Class Form1
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(13, 232)
+        Me.Label5.Location = New System.Drawing.Point(13, 276)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(39, 13)
         Me.Label5.TabIndex = 23
@@ -70,9 +78,9 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Button1.Location = New System.Drawing.Point(134, 197)
+        Me.Button1.Location = New System.Drawing.Point(12, 221)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(129, 36)
+        Me.Button1.Size = New System.Drawing.Size(101, 39)
         Me.Button1.TabIndex = 20
         Me.Button1.Text = "Calculate"
         Me.Button1.UseVisualStyleBackColor = True
@@ -184,22 +192,90 @@ Partial Class Form1
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(13, 248)
+        Me.RichTextBox1.Location = New System.Drawing.Point(13, 292)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.Size = New System.Drawing.Size(259, 184)
         Me.RichTextBox1.TabIndex = 12
         Me.RichTextBox1.Text = ""
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.RadioButton6)
+        Me.GroupBox2.Controls.Add(Me.RadioButton5)
+        Me.GroupBox2.Location = New System.Drawing.Point(143, 135)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(115, 66)
+        Me.GroupBox2.TabIndex = 24
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Using"
+        '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Location = New System.Drawing.Point(7, 20)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(99, 17)
+        Me.RadioButton5.TabIndex = 0
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "G7TID and SID"
+        Me.RadioButton5.UseVisualStyleBackColor = True
+        '
+        'RadioButton6
+        '
+        Me.RadioButton6.AutoSize = True
+        Me.RadioButton6.Location = New System.Drawing.Point(7, 43)
+        Me.RadioButton6.Name = "RadioButton6"
+        Me.RadioButton6.Size = New System.Drawing.Size(88, 17)
+        Me.RadioButton6.TabIndex = 1
+        Me.RadioButton6.TabStop = True
+        Me.RadioButton6.Text = "TSV and SID"
+        Me.RadioButton6.UseVisualStyleBackColor = True
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.RadioButton7)
+        Me.GroupBox3.Controls.Add(Me.RadioButton8)
+        Me.GroupBox3.Location = New System.Drawing.Point(143, 207)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(115, 66)
+        Me.GroupBox3.TabIndex = 25
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "Using"
+        '
+        'RadioButton7
+        '
+        Me.RadioButton7.AutoSize = True
+        Me.RadioButton7.Location = New System.Drawing.Point(7, 43)
+        Me.RadioButton7.Name = "RadioButton7"
+        Me.RadioButton7.Size = New System.Drawing.Size(88, 17)
+        Me.RadioButton7.TabIndex = 1
+        Me.RadioButton7.TabStop = True
+        Me.RadioButton7.Text = "TSV and TID"
+        Me.RadioButton7.UseVisualStyleBackColor = True
+        '
+        'RadioButton8
+        '
+        Me.RadioButton8.AutoSize = True
+        Me.RadioButton8.Location = New System.Drawing.Point(7, 20)
+        Me.RadioButton8.Name = "RadioButton8"
+        Me.RadioButton8.Size = New System.Drawing.Size(99, 17)
+        Me.RadioButton8.TabIndex = 0
+        Me.RadioButton8.TabStop = True
+        Me.RadioButton8.Text = "G7TID and TID"
+        Me.RadioButton8.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 449)
+        Me.ClientSize = New System.Drawing.Size(284, 496)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -213,6 +289,10 @@ Partial Class Form1
         Me.Text = "pokéIDcalc"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -234,4 +314,10 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents RadioButton6 As RadioButton
+    Friend WithEvents RadioButton5 As RadioButton
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents RadioButton7 As RadioButton
+    Friend WithEvents RadioButton8 As RadioButton
 End Class
