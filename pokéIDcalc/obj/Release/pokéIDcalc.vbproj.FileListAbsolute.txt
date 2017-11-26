@@ -1,0 +1,12 @@
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\bin\Release\pokéIDcalc.exe.config
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\bin\Release\pokéIDcalc.exe
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\bin\Release\pokéIDcalc.pdb
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\bin\Release\pokéIDcalc.xml
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbprojResolveAssemblyReference.cache
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.Form1.resources
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.Resources.resources
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbproj.GenerateResource.Cache
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbproj.CoreCompileInputs.cache
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.exe
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.xml
+c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.pdb
