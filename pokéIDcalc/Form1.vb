@@ -10,6 +10,8 @@
     Dim Output As String
     Dim Modi As Integer
     Dim TSV As Integer
+    Dim PossibitiesS As String
+    Dim PossibitiesT As String
     Private Sub Reset()
         Type = 0
         TID = 0
@@ -116,6 +118,13 @@
         End If
     End Sub
 
+    Private Sub possS()
+        PossibitiesS = SID - 16 & " " & SID - 15 & " " & SID - 14 & " " & SID - 13 & " " & SID - 12 & " " & SID - 11 & " " & SID - 10 & " " & SID - 9 & " " & SID - 8 & " " & SID - 7 & " " & SID - 6 & " " & SID - 5 & " " & SID - 4 & " " & SID - 3 & " " & SID - 2 & " " & SID - 1 & " " & SID & " " & SID + 1 & " " & SID + 2 & " " & SID + 3 & " " & SID + 4 & " " & SID + 5 & " " & SID + 6 & " " & SID + 7 & " " & SID + 8 & " " & SID + 9 & " " & SID + 10 & " " & SID + 11 & " " & SID + 12 & " " & SID + 13 & " " & SID + 14 & " " & SID + 15 & " " & SID + 16
+    End Sub
+    Private Sub possT()
+        PossibitiesT = TID - 16 & " " & TID - 15 & " " & TID - 14 & " " & TID - 13 & " " & TID - 12 & " " & TID - 11 & " " & TID - 10 & " " & TID - 9 & " " & TID - 8 & " " & TID - 7 & " " & TID - 6 & " " & TID - 5 & " " & TID - 4 & " " & TID - 3 & " " & TID - 2 & " " & TID - 1 & " " & TID & " " & TID + 1 & " " & TID + 2 & " " & TID + 3 & " " & TID + 4 & " " & TID + 5 & " " & TID + 6 & " " & TID + 7 & " " & TID + 8 & " " & TID + 9 & " " & TID + 10 & " " & TID + 11 & " " & TID + 12 & " " & TID + 13 & " " & TID + 14 & " " & TID + 15 & " " & TID + 16
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         updateStuff()
         If Type = 1 Then
@@ -184,12 +193,14 @@
         ElseIf Type = 5 Then
             TID = (SID Xor (TSV << 4))
             'TID = SID ^ (TSV << 4)
-            Output = "TID is " & TID + 1
+            possT()
+            Output = "TID is " & PossibitiesT
             RichTextBox1.Text = Output
         ElseIf Type = 6 Then
             SID = (TID Xor (TSV << 4))
             'SID = TID ^ (TSV << 4)
-            Output = "SID is " & SID - 1
+            possS()
+            Output = "SID is " & PossibitiesS
             RichTextBox1.Text = Output
         End If
     End Sub
