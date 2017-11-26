@@ -182,12 +182,14 @@
             Output = "TSV is " & TSV
             RichTextBox1.Text = Output
         ElseIf Type = 5 Then
-            TID = SID ^ (TSV << 4)
-            Output = "TID is " & TID
+            TID = (SID Xor (TSV << 4))
+            'TID = SID ^ (TSV << 4)
+            Output = "TID is " & TID + 1
             RichTextBox1.Text = Output
         ElseIf Type = 6 Then
-            SID = TID ^ (TSV << 4)
-            Output = "SID is " & SID
+            SID = (TID Xor (TSV << 4))
+            'SID = TID ^ (TSV << 4)
+            Output = "SID is " & SID - 1
             RichTextBox1.Text = Output
         End If
     End Sub
