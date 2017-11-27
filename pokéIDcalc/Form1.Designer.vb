@@ -40,8 +40,8 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.RadioButton6 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.RadioButton7 = New System.Windows.Forms.RadioButton()
         Me.RadioButton8 = New System.Windows.Forms.RadioButton()
@@ -210,17 +210,6 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Using"
         '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(7, 20)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(99, 17)
-        Me.RadioButton5.TabIndex = 0
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "G7TID and SID"
-        Me.RadioButton5.UseVisualStyleBackColor = True
-        '
         'RadioButton6
         '
         Me.RadioButton6.AutoSize = True
@@ -231,6 +220,17 @@ Partial Class Form1
         Me.RadioButton6.TabStop = True
         Me.RadioButton6.Text = "TSV and SID"
         Me.RadioButton6.UseVisualStyleBackColor = True
+        '
+        'RadioButton5
+        '
+        Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Location = New System.Drawing.Point(7, 20)
+        Me.RadioButton5.Name = "RadioButton5"
+        Me.RadioButton5.Size = New System.Drawing.Size(99, 17)
+        Me.RadioButton5.TabIndex = 0
+        Me.RadioButton5.TabStop = True
+        Me.RadioButton5.Text = "G7TID and SID"
+        Me.RadioButton5.UseVisualStyleBackColor = True
         '
         'GroupBox3
         '
@@ -284,6 +284,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.RichTextBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "pokéIDcalc"

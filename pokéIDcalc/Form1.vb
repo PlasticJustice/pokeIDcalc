@@ -23,48 +23,37 @@
         G7TID = 0
         Modi = 0
         TSV = 0
+        TextBox1.Enabled = True
+        TextBox4.Enabled = True
+        TextBox2.Enabled = True
+        TextBox3.Enabled = True
     End Sub
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
         If RadioButton1.Checked Then
             TextBox1.Enabled = False
             TextBox4.Enabled = False
-            TextBox2.Enabled = True
-            TextBox3.Enabled = True
             Type = 1
         Else
-            TextBox1.Enabled = True
-            TextBox4.Enabled = True
-            Type = 0
             Reset()
         End If
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
         If RadioButton2.Checked Then
-            TextBox3.Enabled = False
-            TextBox4.Enabled = False
-            RadioButton5.PerformClick()
             GroupBox2.Enabled = True
-            Type = 2
+            RadioButton5.PerformClick()
         Else
-
             GroupBox2.Enabled = False
-            Type = 0
             Reset()
         End If
     End Sub
 
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
         If RadioButton3.Checked Then
-            TextBox2.Enabled = False
-            TextBox4.Enabled = False
-            RadioButton8.PerformClick()
             GroupBox3.Enabled = True
-            Type = 3
+            RadioButton8.PerformClick()
         Else
-
             GroupBox3.Enabled = False
-            Type = 0
             Reset()
         End If
     End Sub
@@ -75,17 +64,52 @@
             TextBox4.Enabled = False
             Type = 4
         Else
-            TextBox1.Enabled = True
-            TextBox4.Enabled = True
-            Type = 0
+            Reset()
+        End If
+    End Sub
+
+    Private Sub RadioButton5_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton5.CheckedChanged
+        If RadioButton5.Checked And RadioButton2.Checked Then
+            TextBox3.Enabled = False
+            TextBox4.Enabled = False
+            Type = 2
+        Else
+            Reset()
+        End If
+    End Sub
+
+    Private Sub RadioButton6_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton6.CheckedChanged
+        If RadioButton6.Checked And RadioButton2.Checked Then
+            TextBox1.Enabled = False
+            TextBox3.Enabled = False
+            Type = 5
+        Else
+            Reset()
+        End If
+    End Sub
+
+    Private Sub RadioButton8_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton8.CheckedChanged
+        If RadioButton8.Checked And RadioButton3.Checked Then
+            TextBox2.Enabled = False
+            TextBox4.Enabled = False
+            Type = 3
+        Else
+            Reset()
+        End If
+    End Sub
+
+    Private Sub RadioButton7_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton7.CheckedChanged
+        If RadioButton7.Checked And RadioButton3.Checked Then
+            TextBox1.Enabled = False
+            TextBox2.Enabled = False
+            Type = 6
+        Else
             Reset()
         End If
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RadioButton1.PerformClick()
-        RadioButton5.PerformClick()
-        RadioButton8.PerformClick()
         GroupBox2.Enabled = False
         GroupBox3.Enabled = False
     End Sub
@@ -108,7 +132,6 @@
         ElseIf Type = 6 Then
             TID = TextBox3.Text
             TSV = TextBox4.Text
-
         End If
     End Sub
     Private Sub Modifer()
@@ -119,10 +142,74 @@
     End Sub
 
     Private Sub possS()
-        PossibitiesS = SID - 16 & " " & SID - 15 & " " & SID - 14 & " " & SID - 13 & " " & SID - 12 & " " & SID - 11 & " " & SID - 10 & " " & SID - 9 & " " & SID - 8 & " " & SID - 7 & " " & SID - 6 & " " & SID - 5 & " " & SID - 4 & " " & SID - 3 & " " & SID - 2 & " " & SID - 1 & " " & SID & " " & SID + 1 & " " & SID + 2 & " " & SID + 3 & " " & SID + 4 & " " & SID + 5 & " " & SID + 6 & " " & SID + 7 & " " & SID + 8 & " " & SID + 9 & " " & SID + 10 & " " & SID + 11 & " " & SID + 12 & " " & SID + 13 & " " & SID + 14 & " " & SID + 15 & " " & SID + 16
+        PossibitiesS = SID - 16 & " 
+" & SID - 15 & " 
+" & SID - 14 & " 
+" & SID - 13 & " 
+" & SID - 12 & " 
+" & SID - 11 & " 
+" & SID - 10 & " 
+" & SID - 9 & " 
+" & SID - 8 & " 
+" & SID - 7 & " 
+" & SID - 6 & " 
+" & SID - 5 & " 
+" & SID - 4 & " 
+" & SID - 3 & " 
+" & SID - 2 & " 
+" & SID - 1 & " 
+" & SID & " 
+" & SID + 1 & " 
+" & SID + 2 & " 
+" & SID + 3 & " 
+" & SID + 4 & " 
+" & SID + 5 & " 
+" & SID + 6 & " 
+" & SID + 7 & " 
+" & SID + 8 & " 
+" & SID + 9 & " 
+" & SID + 10 & " 
+" & SID + 11 & " 
+" & SID + 12 & " 
+" & SID + 13 & " 
+" & SID + 14 & " 
+" & SID + 15 & " 
+" & SID + 16
     End Sub
     Private Sub possT()
-        PossibitiesT = TID - 16 & " " & TID - 15 & " " & TID - 14 & " " & TID - 13 & " " & TID - 12 & " " & TID - 11 & " " & TID - 10 & " " & TID - 9 & " " & TID - 8 & " " & TID - 7 & " " & TID - 6 & " " & TID - 5 & " " & TID - 4 & " " & TID - 3 & " " & TID - 2 & " " & TID - 1 & " " & TID & " " & TID + 1 & " " & TID + 2 & " " & TID + 3 & " " & TID + 4 & " " & TID + 5 & " " & TID + 6 & " " & TID + 7 & " " & TID + 8 & " " & TID + 9 & " " & TID + 10 & " " & TID + 11 & " " & TID + 12 & " " & TID + 13 & " " & TID + 14 & " " & TID + 15 & " " & TID + 16
+        PossibitiesT = TID - 16 & " 
+" & TID - 15 & " 
+" & TID - 14 & " 
+" & TID - 13 & " 
+" & TID - 12 & " 
+" & TID - 11 & " 
+" & TID - 10 & " 
+" & TID - 9 & " 
+" & TID - 8 & " 
+" & TID - 7 & " 
+" & TID - 6 & " 
+" & TID - 5 & " 
+" & TID - 4 & " 
+" & TID - 3 & " 
+" & TID - 2 & " 
+" & TID - 1 & " 
+" & TID & " 
+" & TID + 1 & " 
+" & TID + 2 & " 
+" & TID + 3 & " 
+" & TID + 4 & " 
+" & TID + 5 & " 
+" & TID + 6 & " 
+" & TID + 7 & " 
+" & TID + 8 & " 
+" & TID + 9 & " 
+" & TID + 10 & " 
+" & TID + 11 & " 
+" & TID + 12 & " 
+" & TID + 13 & " 
+" & TID + 14 & " 
+" & TID + 15 & " 
+" & TID + 16
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -194,58 +281,20 @@
             TID = (SID Xor (TSV << 4))
             'TID = SID ^ (TSV << 4)
             possT()
-            Output = "TID is " & PossibitiesT
+            Output = "TID could be one of... 
+
+" & PossibitiesT
             RichTextBox1.Text = Output
         ElseIf Type = 6 Then
             SID = (TID Xor (TSV << 4))
             'SID = TID ^ (TSV << 4)
             possS()
-            Output = "SID is " & PossibitiesS
+            Output = "SID could be one of... 
+
+" & PossibitiesS
             RichTextBox1.Text = Output
         End If
     End Sub
 
-    Private Sub RadioButton5_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton5.CheckedChanged
-        If RadioButton5.Checked And RadioButton2.Checked Then
-            TextBox3.Enabled = False
-            TextBox4.Enabled = False
-        Else
-            TextBox3.Enabled = True
-            TextBox4.Enabled = True
-        End If
-    End Sub
 
-    Private Sub RadioButton6_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton6.CheckedChanged
-        If RadioButton6.Checked And RadioButton2.Checked Then
-            TextBox1.Enabled = False
-            TextBox3.Enabled = False
-            Type = 5
-        Else
-            TextBox3.Enabled = True
-            TextBox1.Enabled = True
-            Type = 0
-        End If
-    End Sub
-
-    Private Sub RadioButton8_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton8.CheckedChanged
-        If RadioButton8.Checked And RadioButton3.Checked Then
-            TextBox2.Enabled = False
-            TextBox4.Enabled = False
-        Else
-            TextBox2.Enabled = True
-            TextBox4.Enabled = True
-        End If
-    End Sub
-
-    Private Sub RadioButton7_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton7.CheckedChanged
-        If RadioButton7.Checked And RadioButton3.Checked Then
-            TextBox1.Enabled = False
-            TextBox2.Enabled = False
-            Type = 6
-        Else
-            TextBox2.Enabled = True
-            TextBox1.Enabled = True
-            Type = 0
-        End If
-    End Sub
 End Class
