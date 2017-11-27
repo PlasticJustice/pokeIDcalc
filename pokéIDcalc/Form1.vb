@@ -12,6 +12,7 @@
     Dim TSV As Integer 'variable for Trainer Shiny Value
     Dim PossibitiesS As String 'All SID possibities when calculated with TSV
     Dim PossibitiesT As String 'All TID possibities when calculated with TSV
+    
     'Resets all the variables
     Private Sub Reset()
         Type = 0
