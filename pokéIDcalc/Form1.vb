@@ -30,6 +30,8 @@
         Modi = 0
         TSV = 0
     End Sub
+
+    'Hide/Show all textboxes
     Private Sub HideAll()
         TextBox1.Enabled = False
         TextBox2.Enabled = False
