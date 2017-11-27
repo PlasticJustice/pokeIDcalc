@@ -7,8 +7,8 @@
 - Calculate your Secret ID  
   
 **Notes:**
-- Due to the modulo operation when calculating your G7TID, calculating your TID or SID with it might yield multiple results.  
-- Due to the destructive bit shift when calculating your TSV, calculating your TID or SID with it will yield multiple results.  
+- Due to the modulo operation when calculating your G7TID, calculating your TID or SID with it might yield multiple possible results.  
+- Due to the destructive bit shift when calculating your TSV, calculating your TID or SID with it will yield multiple possible results.  
   
 **Known Bugs:**
 
