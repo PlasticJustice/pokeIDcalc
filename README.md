@@ -11,8 +11,7 @@
 - Due to the destructive bit shift when calculating your TSV, calculating your TID or SID with it will yield multiple possible results.  
   
 **Known Bugs:**
-
-- Sometimes certain text boxes will fail to be disabled.  
+  
 - It's not 100% accurate when calculating TID and SID  
   
 **Example:**  
