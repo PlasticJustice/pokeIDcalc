@@ -15,6 +15,10 @@
 
     'Resets all the variables
     Private Sub Reset()
+        TextBox1.Enabled = True
+        TextBox2.Enabled = True
+        TextBox3.Enabled = True
+        TextBox4.Enabled = True
         Type = 0
         TID = 0
         SID = 0
@@ -25,13 +29,21 @@
         G7TID = 0
         Modi = 0
         TSV = 0
+    End Sub
+    Private Sub HideAll()
+        TextBox1.Enabled = False
+        TextBox2.Enabled = False
+        TextBox3.Enabled = False
+        TextBox4.Enabled = False
+    End Sub
+    Private Sub ShowAll()
         TextBox1.Enabled = True
-        TextBox4.Enabled = True
         TextBox2.Enabled = True
         TextBox3.Enabled = True
+        TextBox4.Enabled = True
     End Sub
 
-    'Makes it so only numbers can be place in the textboxes
+    'Makes it so only numbers can be place in the textboxes:
     Private Sub TextBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
 
         '97 - 122 = Ascii codes for simple letters
@@ -85,9 +97,11 @@
 
     End Sub
 
-    'All the RadioButtons that select how and what is calculated
+    'All the RadioButtons that select how and what is calculated:
+    'G7TID
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
         If RadioButton1.Checked Then
+            Reset()
             TextBox1.Enabled = False
             TextBox4.Enabled = False
             Type = 1
@@ -95,24 +109,29 @@
             Reset()
         End If
     End Sub
+    'TID
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
         If RadioButton2.Checked Then
+            Reset()
             GroupBox2.Show()
-            RadioButton5.PerformClick()
+            HideAll()
         Else
             GroupBox2.Hide()
             Reset()
         End If
     End Sub
+    'SID
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
         If RadioButton3.Checked Then
+            Reset()
             GroupBox3.Show()
-            RadioButton8.PerformClick()
+            HideAll()
         Else
             GroupBox3.Hide()
             Reset()
         End If
     End Sub
+    'TSV
     Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
         If RadioButton4.Checked Then
             TextBox1.Enabled = False
@@ -122,8 +141,10 @@
             Reset()
         End If
     End Sub
+    'G7TID & SID = TID
     Private Sub RadioButton5_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton5.CheckedChanged
         If RadioButton5.Checked And RadioButton2.Checked Then
+            ShowAll()
             TextBox3.Enabled = False
             TextBox4.Enabled = False
             Type = 2
@@ -131,8 +152,10 @@
             Reset()
         End If
     End Sub
+    'TSV & SID = TID
     Private Sub RadioButton6_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton6.CheckedChanged
         If RadioButton6.Checked And RadioButton2.Checked Then
+            ShowAll()
             TextBox1.Enabled = False
             TextBox3.Enabled = False
             Type = 5
@@ -140,8 +163,10 @@
             Reset()
         End If
     End Sub
+    'TSV & TID = SID
     Private Sub RadioButton8_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton8.CheckedChanged
         If RadioButton8.Checked And RadioButton3.Checked Then
+            ShowAll()
             TextBox2.Enabled = False
             TextBox4.Enabled = False
             Type = 3
@@ -149,8 +174,10 @@
             Reset()
         End If
     End Sub
+    'G7TID & TID = SID
     Private Sub RadioButton7_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton7.CheckedChanged
         If RadioButton7.Checked And RadioButton3.Checked Then
+            ShowAll()
             TextBox1.Enabled = False
             TextBox2.Enabled = False
             Type = 6
