@@ -236,7 +236,7 @@ Partial Class Form1
         '
         Me.GroupBox3.Controls.Add(Me.RadioButton7)
         Me.GroupBox3.Controls.Add(Me.RadioButton8)
-        Me.GroupBox3.Location = New System.Drawing.Point(143, 207)
+        Me.GroupBox3.Location = New System.Drawing.Point(143, 135)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(115, 66)
         Me.GroupBox3.TabIndex = 25

@@ -12,6 +12,9 @@
     Dim TSV As Integer
     Dim PossibitiesS As String
     Dim PossibitiesT As String
+    Dim noMod As Integer
+    Dim preMod As Integer
+
     Private Sub Reset()
         Type = 0
         TID = 0
@@ -40,20 +43,20 @@
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
         If RadioButton2.Checked Then
-            GroupBox2.Enabled = True
+            GroupBox2.Show()
             RadioButton5.PerformClick()
         Else
-            GroupBox2.Enabled = False
+            GroupBox2.Hide()
             Reset()
         End If
     End Sub
 
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
         If RadioButton3.Checked Then
-            GroupBox3.Enabled = True
+            GroupBox3.Show()
             RadioButton8.PerformClick()
         Else
-            GroupBox3.Enabled = False
+            GroupBox3.Hide()
             Reset()
         End If
     End Sub
@@ -110,8 +113,8 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RadioButton1.PerformClick()
-        GroupBox2.Enabled = False
-        GroupBox3.Enabled = False
+        GroupBox2.Hide()
+        GroupBox3.Hide()
     End Sub
     Private Sub updateStuff()
         If Type = 1 Then
