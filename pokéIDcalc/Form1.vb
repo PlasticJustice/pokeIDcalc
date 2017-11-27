@@ -1,20 +1,18 @@
 ﻿Public Class Form1
-    Dim Type As Integer
-    Dim TID As Integer
-    Dim SID As Integer
-    Dim SIDd As Double
-    Dim SIDdp As Double
-    Dim TIDd As Double
-    Dim TIDdp As Double
-    Dim G7TID As Integer
-    Dim Output As String
-    Dim Modi As Integer
-    Dim TSV As Integer
-    Dim PossibitiesS As String
-    Dim PossibitiesT As String
-    Dim noMod As Integer
-    Dim preMod As Integer
-
+    Dim Type As Integer 'determines what is being calculated
+    Dim TID As Integer 'variable for Trainer ID
+    Dim SID As Integer 'variable for Secret ID
+    Dim SIDd As Double 'SID with decimals
+    Dim SIDdp As Double 'Previously calculated SID
+    Dim TIDd As Double 'TID with decimals
+    Dim TIDdp As Double 'Previously calculated TID
+    Dim G7TID As Integer 'variable for Gen 7 Trainer ID
+    Dim Output As String 'Output text
+    Dim Modi As Integer 'Number add to G7TID to counter the mod 1000000
+    Dim TSV As Integer 'variable for Trainer Shiny Value
+    Dim PossibitiesS As String 'All SID possibities when calculated with TSV
+    Dim PossibitiesT As String 'All TID possibities when calculated with TSV
+    'Resets all the variables
     Private Sub Reset()
         Type = 0
         TID = 0
@@ -31,6 +29,8 @@
         TextBox2.Enabled = True
         TextBox3.Enabled = True
     End Sub
+
+    'All the RadioButtons that select how and what is calculated
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
         If RadioButton1.Checked Then
             TextBox1.Enabled = False
@@ -40,7 +40,6 @@
             Reset()
         End If
     End Sub
-
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
         If RadioButton2.Checked Then
             GroupBox2.Show()
@@ -50,7 +49,6 @@
             Reset()
         End If
     End Sub
-
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
         If RadioButton3.Checked Then
             GroupBox3.Show()
@@ -60,7 +58,6 @@
             Reset()
         End If
     End Sub
-
     Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
         If RadioButton4.Checked Then
             TextBox1.Enabled = False
@@ -70,7 +67,6 @@
             Reset()
         End If
     End Sub
-
     Private Sub RadioButton5_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton5.CheckedChanged
         If RadioButton5.Checked And RadioButton2.Checked Then
             TextBox3.Enabled = False
@@ -80,7 +76,6 @@
             Reset()
         End If
     End Sub
-
     Private Sub RadioButton6_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton6.CheckedChanged
         If RadioButton6.Checked And RadioButton2.Checked Then
             TextBox1.Enabled = False
@@ -90,7 +85,6 @@
             Reset()
         End If
     End Sub
-
     Private Sub RadioButton8_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton8.CheckedChanged
         If RadioButton8.Checked And RadioButton3.Checked Then
             TextBox2.Enabled = False
@@ -100,7 +94,6 @@
             Reset()
         End If
     End Sub
-
     Private Sub RadioButton7_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton7.CheckedChanged
         If RadioButton7.Checked And RadioButton3.Checked Then
             TextBox1.Enabled = False
@@ -111,11 +104,14 @@
         End If
     End Sub
 
+    'Form at startup
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RadioButton1.PerformClick()
         GroupBox2.Hide()
         GroupBox3.Hide()
     End Sub
+
+    'Puts info from Textboxes to variables
     Private Sub updateStuff()
         If Type = 1 Then
             TID = TextBox3.Text
@@ -137,6 +133,8 @@
             TSV = TextBox4.Text
         End If
     End Sub
+
+    'Calculates the amount to counter the mod 1000000
     Private Sub Modifer()
         If Modi <= 2145000000 Then
             Modi = Modi + 1000000
@@ -144,6 +142,7 @@
         End If
     End Sub
 
+    'All SID possibities when calculated with TSV
     Private Sub possS()
         PossibitiesS = SID - 16 & " 
 " & SID - 15 & " 
@@ -179,6 +178,7 @@
 " & SID + 15 & " 
 " & SID + 16
     End Sub
+    'All TID possibities when calculated with TSV
     Private Sub possT()
         PossibitiesT = TID - 16 & " 
 " & TID - 15 & " 
@@ -215,6 +215,7 @@
 " & TID + 16
     End Sub
 
+    'The calculations
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         updateStuff()
         If Type = 1 Then
@@ -298,6 +299,4 @@
             RichTextBox1.Text = Output
         End If
     End Sub
-
-
 End Class
