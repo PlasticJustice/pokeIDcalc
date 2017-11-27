@@ -12,7 +12,7 @@
     Dim TSV As Integer 'variable for Trainer Shiny Value
     Dim PossibitiesS As String 'All SID possibities when calculated with TSV
     Dim PossibitiesT As String 'All TID possibities when calculated with TSV
-    
+
     'Resets all the variables
     Private Sub Reset()
         Type = 0
@@ -29,6 +29,60 @@
         TextBox4.Enabled = True
         TextBox2.Enabled = True
         TextBox3.Enabled = True
+    End Sub
+
+    'Makes it so only numbers can be place in the textboxes
+    Private Sub TextBox1_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
+
+        '97 - 122 = Ascii codes for simple letters
+        '65 - 90  = Ascii codes for capital letters
+        '48 - 57  = Ascii codes for numbers
+
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+
+    End Sub
+    Private Sub TextBox2_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox2.KeyPress
+
+        '97 - 122 = Ascii codes for simple letters
+        '65 - 90  = Ascii codes for capital letters
+        '48 - 57  = Ascii codes for numbers
+
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+
+    End Sub
+    Private Sub TextBox3_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox3.KeyPress
+
+        '97 - 122 = Ascii codes for simple letters
+        '65 - 90  = Ascii codes for capital letters
+        '48 - 57  = Ascii codes for numbers
+
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+
+    End Sub
+    Private Sub TextBox4_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox4.KeyPress
+
+        '97 - 122 = Ascii codes for simple letters
+        '65 - 90  = Ascii codes for capital letters
+        '48 - 57  = Ascii codes for numbers
+
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+
     End Sub
 
     'All the RadioButtons that select how and what is calculated
@@ -115,23 +169,47 @@
     'Puts info from Textboxes to variables
     Private Sub updateStuff()
         If Type = 1 Then
-            TID = TextBox3.Text
-            SID = TextBox2.Text
+            If TextBox3.Text = "" Or TextBox2.Text = "" Then
+                MsgBox("Error")
+            Else
+                TID = TextBox3.Text
+                SID = TextBox2.Text
+            End If
         ElseIf Type = 2 Then
-            G7TID = TextBox1.Text
-            SID = TextBox2.Text
+            If TextBox1.Text = "" Or TextBox2.Text = "" Then
+                MsgBox("Error")
+            Else
+                G7TID = TextBox1.Text
+                SID = TextBox2.Text
+            End If
         ElseIf Type = 3 Then
-            G7TID = TextBox1.Text
-            TID = TextBox3.Text
+            If TextBox3.Text = "" Or TextBox1.Text = "" Then
+                MsgBox("Error")
+            Else
+                G7TID = TextBox1.Text
+                TID = TextBox3.Text
+            End If
         ElseIf Type = 4 Then
-            TID = TextBox3.Text
-            SID = TextBox2.Text
+            If TextBox3.Text = "" Or TextBox2.Text = "" Then
+                MsgBox("Error")
+            Else
+                TID = TextBox3.Text
+                SID = TextBox2.Text
+            End If
         ElseIf Type = 5 Then
-            TSV = TextBox4.Text
-            SID = TextBox2.Text
+            If TextBox4.Text = "" Or TextBox2.Text = "" Then
+                MsgBox("Error")
+            Else
+                TSV = TextBox4.Text
+                SID = TextBox2.Text
+            End If
         ElseIf Type = 6 Then
-            TID = TextBox3.Text
-            TSV = TextBox4.Text
+            If TextBox3.Text = "" Or TextBox4.Text = "" Then
+                MsgBox("Error")
+            Else
+                TID = TextBox3.Text
+                TSV = TextBox4.Text
+            End If
         End If
     End Sub
 
