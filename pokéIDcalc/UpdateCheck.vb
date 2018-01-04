@@ -4,7 +4,7 @@
     Dim prog As String = dir & "\AutoUpdater.exe"
     Public Sub New()
         InitializeComponent()
-        Dim request As System.Net.HttpWebRequest = System.Net.HttpWebRequest.Create("link to version.txt")
+        Dim request As System.Net.HttpWebRequest = System.Net.HttpWebRequest.Create("https://github.com/PlasticJustice/pokeIDcalc/raw/master/pok%C3%A9IDcalc/bin/Debug/version.txt")
         Dim response As System.Net.HttpWebResponse = request.GetResponse()
         Dim sr As System.IO.StreamReader = New System.IO.StreamReader(response.GetResponseStream())
         Dim newestversion As String = sr.ReadToEnd()
@@ -16,7 +16,7 @@
             End If
             Close()
         Else
-            web.DownloadFileAsync(New Uri("link to AutoUpdater.exe"), prog)
+            web.DownloadFileAsync(New Uri("https://github.com/PlasticJustice/pokeIDcalc/raw/master/pok%C3%A9IDcalc/AutoUpdater.exe"), prog)
             Timer1.Start()
         End If
         DialogResult = Windows.Forms.DialogResult.Yes

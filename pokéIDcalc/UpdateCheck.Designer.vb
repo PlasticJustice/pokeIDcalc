@@ -31,7 +31,7 @@ Partial Class UpdateCheck
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(58, 49)
+        Me.Label1.Location = New System.Drawing.Point(59, 46)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(163, 18)
         Me.Label1.TabIndex = 0
