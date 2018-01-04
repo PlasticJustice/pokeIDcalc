@@ -190,11 +190,21 @@
 
     'Form at startup
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        checkUpdate()
         RadioButton1.PerformClick()
         GroupBox2.Hide()
         GroupBox3.Hide()
+        Button2.Hide()
     End Sub
-
+    Public Sub checkUpdate()
+        Dim ver As String = My.Application.Info.Version.ToString
+        Dim path As String = My.Application.Info.DirectoryPath
+#If DEBUG Then
+        System.IO.File.WriteAllText(path & "\version.txt", ver)
+#Else
+        Dim msgU As New UpdateCheck
+#End If
+    End Sub
     'Puts info from Textboxes to variables
     Private Sub updateStuff()
         If Type = 1 Then
@@ -406,5 +416,16 @@
 " & PossibitiesS
             RichTextBox1.Text = Output
         End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        OpenFileDialog1.ShowDialog()
+        OpenFileDialog1.Filter = "Main files (main)|main|All files (*.*)|*.*"
+        'System.IO.File.OpenRead(OpenFileDialog1.FileName)
+        Dim fileReader As Long
+        fileReader = My.Computer.FileSystem.ReadAllText(OpenFileDialog1.FileName)
+        MsgBox(fileReader)
+        'System.IO.File.Open(OpenFileDialog1.FileName, IO.FileMode.Open)
+
     End Sub
 End Class
