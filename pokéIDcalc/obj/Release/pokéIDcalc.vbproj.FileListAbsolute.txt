@@ -10,14 +10,6 @@ c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDc
 c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.exe
 c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.xml
 c:\users\kochen family\source\repos\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.pdb
-C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbprojResolveAssemblyReference.cache
-C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.Form1.resources
-C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.Resources.resources
-C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbproj.GenerateResource.Cache
-C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbproj.CoreCompileInputs.cache
-C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.exe
-C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.xml
-C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.pdb
 C:\Users\Kochen Family\Videos\pokeIDcalc-master\pokeIDcalc-master\pokéIDcalc\bin\Release\pokéIDcalc.exe.config
 C:\Users\Kochen Family\Videos\pokeIDcalc-master\pokeIDcalc-master\pokéIDcalc\bin\Release\pokéIDcalc.exe
 C:\Users\Kochen Family\Videos\pokeIDcalc-master\pokeIDcalc-master\pokéIDcalc\bin\Release\pokéIDcalc.pdb
@@ -30,4 +22,12 @@ C:\Users\Kochen Family\Videos\pokeIDcalc-master\pokeIDcalc-master\pokéIDcalc\ob
 C:\Users\Kochen Family\Videos\pokeIDcalc-master\pokeIDcalc-master\pokéIDcalc\obj\Release\pokéIDcalc.exe
 C:\Users\Kochen Family\Videos\pokeIDcalc-master\pokeIDcalc-master\pokéIDcalc\obj\Release\pokéIDcalc.xml
 C:\Users\Kochen Family\Videos\pokeIDcalc-master\pokeIDcalc-master\pokéIDcalc\obj\Release\pokéIDcalc.pdb
+C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.Form1.resources
+C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.Resources.resources
 C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.UpdateCheck.resources
+C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbproj.GenerateResource.Cache
+C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbproj.CoreCompileInputs.cache
+C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.exe
+C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.xml
+C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.pdb
