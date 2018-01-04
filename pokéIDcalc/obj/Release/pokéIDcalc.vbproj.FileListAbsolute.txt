@@ -31,3 +31,12 @@ C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\
 C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.exe
 C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.xml
 C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.pdb
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.Form1.resources
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.Resources.resources
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.UpdateCheck.resources
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbproj.GenerateResource.Cache
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbproj.CoreCompileInputs.cache
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.exe
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.xml
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.pdb
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Release\pokéIDcalc.vbprojResolveAssemblyReference.cache
