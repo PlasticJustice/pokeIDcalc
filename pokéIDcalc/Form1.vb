@@ -13,6 +13,12 @@
     Dim PossibitiesS As String 'All SID possibities when calculated with TSV
     Dim PossibitiesT As String 'All TID possibities when calculated with TSV
 
+    Dim rings As Integer
+    Dim shinyrate As Boolean
+    Dim lgtyrs As Integer
+    Dim rate As Double
+    Dim d As Double
+
     'Resets all the variables
     Private Sub Reset()
         TextBox1.Enabled = True
@@ -86,6 +92,19 @@
 
     End Sub
     Private Sub TextBox4_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox4.KeyPress
+
+        '97 - 122 = Ascii codes for simple letters
+        '65 - 90  = Ascii codes for capital letters
+        '48 - 57  = Ascii codes for numbers
+
+        If Asc(e.KeyChar) <> 8 Then
+            If Asc(e.KeyChar) < 48 Or Asc(e.KeyChar) > 57 Then
+                e.Handled = True
+            End If
+        End If
+
+    End Sub
+    Private Sub TextBox5_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox5.KeyPress
 
         '97 - 122 = Ascii codes for simple letters
         '65 - 90  = Ascii codes for capital letters
@@ -195,6 +214,10 @@
         GroupBox2.Hide()
         GroupBox3.Hide()
         Button2.Hide()
+        TabControl1.SelectedIndex += 1
+        RadioButton12.PerformClick()
+        RadioButton10.PerformClick()
+        TabControl1.SelectedIndex -= 1
     End Sub
     Public Sub checkUpdate()
         Dim ver As String = My.Application.Info.Version.ToString
@@ -427,5 +450,61 @@
         MsgBox(fileReader)
         'System.IO.File.Open(OpenFileDialog1.FileName, IO.FileMode.Open)
 
+    End Sub
+
+    Private Sub RadioButton10_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton10.CheckedChanged
+        shinyrate = True
+    End Sub
+    Private Sub RadioButton9_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton9.CheckedChanged
+        shinyrate = False
+    End Sub
+    Private Sub RadioButton12_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton12.CheckedChanged
+        rings = 0
+    End Sub
+    Private Sub RadioButton11_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton11.CheckedChanged
+        rings = 1
+    End Sub
+    Private Sub RadioButton13_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton13.CheckedChanged
+        rings = 2
+    End Sub
+    Private Sub RadioButton14_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton14.CheckedChanged
+        rings = 3
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        If TextBox5.Text = "" Then
+            MsgBox("Error")
+            Exit Sub
+        Else
+            lgtyrs = TextBox5.Text
+        End If
+
+        d = Math.Min(9, ((lgtyrs / 500) - 1))
+
+        If (shinyrate = False) And (rings = 0) Then
+            rate = 3
+            Label7.Text = rate & "%"
+        ElseIf (shinyrate = True) And (rings = 0) Then
+            rate = 1
+            Label7.Text = rate & "%"
+        ElseIf (shinyrate = False) And (rings = 1) Then
+            rate = 3 + d
+            Label7.Text = rate & "%"
+        ElseIf (shinyrate = True) And (rings = 1) Then
+            rate = 1 + d
+            Label7.Text = rate & "%"
+        ElseIf (shinyrate = False) And (rings = 2) Then
+            rate = 7 + (3 * d)
+            Label7.Text = rate & "%"
+        ElseIf (shinyrate = True) And (rings = 2) Then
+            rate = 1 + (2 * d)
+            Label7.Text = rate & "%"
+        ElseIf (shinyrate = False) And (rings = 3) Then
+            rate = 100
+            Label7.Text = rate & "%"
+        ElseIf (shinyrate = True) And (rings = 3) Then
+            rate = (4 * d)
+            Label7.Text = rate & "%"
+        End If
     End Sub
 End Class
