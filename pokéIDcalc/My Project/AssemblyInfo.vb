@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("pokéIDcalc")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("Pokémon ID Calculator")>
+<Assembly: AssemblyCompany("Regnum")>
 <Assembly: AssemblyProduct("pokéIDcalc")>
 <Assembly: AssemblyCopyright("Copyright © Regnum 2017")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTrademark("Regnum")>
 
 <Assembly: ComVisible(False)>
 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.2.0.0")>
-<Assembly: AssemblyFileVersion("1.2.0.0")>
+<Assembly: AssemblyVersion("1.2.1.0")>
+<Assembly: AssemblyFileVersion("1.2.1.0")>
