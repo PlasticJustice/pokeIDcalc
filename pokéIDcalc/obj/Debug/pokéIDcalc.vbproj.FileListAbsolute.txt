@@ -31,3 +31,21 @@ C:\Users\Kochen Family\Videos\pokeIDcalc-master\pokeIDcalc-master\pokéIDcalc\ob
 C:\Users\Kochen Family\Videos\pokeIDcalc-master\pokeIDcalc-master\pokéIDcalc\obj\Debug\pokéIDcalc.xml
 C:\Users\Kochen Family\Videos\pokeIDcalc-master\pokeIDcalc-master\pokéIDcalc\obj\Debug\pokéIDcalc.pdb
 C:\Users\Nick\Documents\Visual Studio 2017\Projects\pokéIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.UpdateCheck.resources
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.vbprojResolveAssemblyReference.cache
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.Form1.resources
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.Resources.resources
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.UpdateCheck.resources
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.vbproj.GenerateResource.Cache
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.vbproj.CoreCompileInputs.cache
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.exe
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.xml
+C:\Users\Nick\source\repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.pdb
+C:\Users\Kochen Family\Source\Repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.vbprojResolveAssemblyReference.cache
+C:\Users\Kochen Family\Source\Repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.Form1.resources
+C:\Users\Kochen Family\Source\Repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.Resources.resources
+C:\Users\Kochen Family\Source\Repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.UpdateCheck.resources
+C:\Users\Kochen Family\Source\Repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.vbproj.GenerateResource.cache
+C:\Users\Kochen Family\Source\Repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.vbproj.CoreCompileInputs.cache
+C:\Users\Kochen Family\Source\Repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.exe
+C:\Users\Kochen Family\Source\Repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.xml
+C:\Users\Kochen Family\Source\Repos\pokeIDcalc\pokéIDcalc\obj\Debug\pokéIDcalc.pdb
